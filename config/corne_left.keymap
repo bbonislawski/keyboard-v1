@@ -1,12 +1,13 @@
-/ {
-    behaviors {
-        compatible = "zmk,behaviors";
-    };
 
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer: layer_0 {
+        default_layer layer_0 {
             bindings = <
                 &kp ESC   &kp Q    &kp W    &kp E    &kp R    &kp T
                 &kp TAB   &kp A    &kp S    &kp D    &kp F    &kp G
