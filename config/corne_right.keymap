@@ -1,8 +1,12 @@
 / {
+
+    behaviors {
+        compatible = "zmk,behaviors";
+    };
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        default_layer layer_0 {
             bindings = <
                 &kp Y     &kp U     &kp I     &kp O     &kp P     &kp BSPC
                 &kp H     &kp J     &kp K     &kp L     &kp SCLN  &kp QUOT
